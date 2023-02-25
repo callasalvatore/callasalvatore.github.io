@@ -89,9 +89,10 @@ Traversing by column took: 1202 ms
 
 To gain insight into the reasons behind the varying results, it is worth delving into the inner workings of DRAM.
 
+<a title="Glogger at English Wikipedia, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Square_array_of_mosfet_cells_read.png"><img width="512" alt="Square array of mosfet cells read" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Square_array_of_mosfet_cells_read.png/512px-Square_array_of_mosfet_cells_read.png"></a>
 
+`By Glogger at English Wikipedia - Transferred from en.wikipedia to Commons., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5549293`
 
-Di Glogger di Wikipedia in inglese - Trasferito da en.wikipedia su Commons., CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=5549293
 
 DRAM is arranged in a cell array, with each cell comprising a transistor and a capacitor that stores one bit. 
 To access a specific cell in a DRAM array, an address is applied to the row and column lines that correspond to the desired cell. This activates the row and column transistors, allowing access to the cell. However, since the row and column lines are shared among multiple cells, accessing a single cell requires a two-phase process. In the first phase, the desired row is selected by applying a voltage to the row line. In the second phase, the desired column is selected by applying a voltage to the column line. In general, reading a single bit from DRAM involves many steps and for this reason, is subject to various delays and timing constraints that can affect the overall performance of the memory:
