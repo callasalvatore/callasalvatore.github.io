@@ -71,6 +71,8 @@ For those interested in delving deeper into Innersource, here are some additiona
 
 - [GitHub's Innersource Guide](https://opensource.guide/leadership-and-governance/)
 
+- [Zalando - How to InnerSource](https://opensource.zalando.com/docs/resources/innersource-howto/)
+
 - [Innersource Commons](https://innersourcecommons.org/)
 
 - [Google Scholar - Innersource Research Papers](https://scholar.google.com/scholar?q=Innersource)
