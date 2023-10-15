@@ -7,7 +7,7 @@ In the world of software development, bugs are a fact of life. They can be elusi
 
 # What is `git bisect`?
 
-`git bisect` is a command in Git that helps you perform a binary search through your commit history to find the commit that introduced a bug. It's like a guided missile for debugging, enabling you to identify the exact commit where things went awry.
+`git bisect` is a command in Git that helps you perform a [binary search](https://en.wikipedia.org/wiki/Binary_search_algorithm) through your commit history to find the commit that introduced a bug. It's like a guided missile for debugging, enabling you to identify the exact commit where things went awry.
 
 # How it Works
 
