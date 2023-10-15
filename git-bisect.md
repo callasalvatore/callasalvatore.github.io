@@ -48,7 +48,7 @@ Imagine you're working on a web application, and users have reported a bug where
    git bisect start
    ```
    
-3. **Specify Known Good and Bad Commits:**
+3. **Specify Known Good and Bad Commits**:
 
    Use the following commands to tell Git about the known good and bad commits:
 
@@ -57,8 +57,47 @@ Imagine you're working on a web application, and users have reported a bug where
    git bisect bad bad_v1.1
    ```
    
+4. **Begin the Bisect Process**:
 
-<-----end of example----->
+   Git will now perform a binary search through your commit history. It will automatically check out a commit between the good and bad points. You'll be placed at
+   this commit.
+   
+6. **Test and Verify**:
+
+   Test the web application at this commit to determine if the "Submit" button works correctly. If it works as expected, mark this commit as "good" using the
+   following command:
+
+   ```bash
+   git bisect good
+   ```
+   
+   If the bug is still present, mark it as "bad" using:
+
+   ```bash
+   git bisect bad
+   ```
+   
+8. **Repeat**:
+
+   Git will continue to bisect by checking out a new commit based on your previous markings. You'll keep testing and marking until Git identifies the exact commit
+   where the bug was introduced. The process will continue until Git finds the "first bad commit."
+
+10. **Identify the Culprit**:
+
+   Once Git has completed the binary search, it will display the commit where the bug was first introduced. You can find this information in the output of the git 
+   bisect command.
+   
+11. **Fix the Bug**:
+
+   Now that you know which commit introduced the bug, you can inspect the changes made in that commit and work on fixing the issue. Once fixed, commit the changes,    and your bug is resolved.
+
+12. **End the Bisect Session**:
+
+   To finish the git bisect session, run:
+
+    ```bash
+   git bisect reset
+   ```
 
 # Conclusion
 
