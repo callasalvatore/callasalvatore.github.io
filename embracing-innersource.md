@@ -73,10 +73,11 @@ For those interested in delving deeper into Innersource, here are some additiona
 
 - [Innersource Commons](https://innersourcecommons.org/)
 
-- [The Cathedral & the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/)
-
 - [Google Scholar - Innersource Research Papers](https://scholar.google.com/scholar?q=Innersource)
 
+- [Comparing the similarities and differences between innersource and open source](https://opensource.com/article/20/11/inner-source)
+
+# Conclusion
 
 Innersource is not just a cultural shift; it's a strategic advantage. As more companies recognize its potential, Innersource is poised to become a driving force in the way we work, learn, and innovate within organizations.
 
