@@ -65,6 +65,19 @@ Innersource isn't just about fostering collaboration; it comes with a treasure t
 **5. Cost Efficiency:**
    By sharing and reusing code internally, companies can reduce redundancy and save resources.
 
+## Useful Resources
+
+For those interested in delving deeper into Innersource, here are some additional resources to explore:
+
+- [GitHub's Innersource Guide](https://opensource.guide/leadership-and-governance/)
+
+- [Innersource Commons](https://innersourcecommons.org/)
+
+- [The Cathedral & the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/)
+
+- [Google Scholar - Innersource Research Papers](https://scholar.google.com/scholar?q=Innersource)
+
+
 Innersource is not just a cultural shift; it's a strategic advantage. As more companies recognize its potential, Innersource is poised to become a driving force in the way we work, learn, and innovate within organizations.
 
 Embrace Innersource, and unlock the hidden potential within your organization. The possibilities are endless, and the benefits are far-reaching. 🚀
