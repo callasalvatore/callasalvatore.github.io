@@ -29,7 +29,24 @@ In the world of software development, bugs are a fact of life. They can be elusi
 
 # Example Usage
 
-Let's say you're working on a web application, and users report a bug where the login page isn't functioning as expected. You can use `git bisect` to pinpoint the exact commit that introduced this issue.
+Let's illustrate the power of `git bisect` with a real-world scenario. Imagine you're working on a web application, and users have reported a bug where the "Submit" button on a form is not functioning correctly. Here's how you can use `git bisect` to pinpoint the exact commit that introduced this issue:
+
+1. **Mark Known Good and Bad Commits**:
+
+   First, you need to identify a known good commit (a version of your code where the "Submit" button works correctly) and a known bad commit (a version with the bug). You can use Git tags or commit hashes to mark these points.
+
+   - Known Good Commit (e.g., "good_v1.0"): This is a commit where the "Submit" button works as expected.
+   - Known Bad Commit (e.g., "bad_v1.1"): This is a commit where the "Submit" button has the bug.
+
+2. **Start the Bisect Session**:
+
+   Run the following command to start the `git bisect` session:
+
+   ```bash
+   git bisect start
+
+
+<-----end of example----->
 
 # Conclusion
 
