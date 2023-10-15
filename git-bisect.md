@@ -29,7 +29,9 @@ In the world of software development, bugs are a fact of life. They can be elusi
 
 # Example Usage
 
-Let's illustrate the power of `git bisect` with a real-world scenario. Imagine you're working on a web application, and users have reported a bug where the "Submit" button on a form is not functioning correctly. Here's how you can use `git bisect` to pinpoint the exact commit that introduced this issue:
+Let's illustrate the power of `git bisect` with a real-world scenario. 
+
+Imagine you're working on a web application, and users have reported a bug where the "Submit" button on a form is not functioning correctly. Here's how you can use `git bisect` to pinpoint the exact commit that introduced this issue:
 
 1. **Mark Known Good and Bad Commits**:
 
@@ -44,7 +46,17 @@ Let's illustrate the power of `git bisect` with a real-world scenario. Imagine y
 
    ```bash
    git bisect start
+   ```
+   
+3. **Specify Known Good and Bad Commits:**
 
+   Use the following commands to tell Git about the known good and bad commits:
+
+   ```bash
+   git bisect good good_v1.0
+   git bisect bad bad_v1.1
+   ```
+   
 
 <-----end of example----->
 
