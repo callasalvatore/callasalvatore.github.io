@@ -1,4 +1,3 @@
-layout: default
 title: Embracing Innersource: A Game-Changer for Companies and Developers
 ---
 
