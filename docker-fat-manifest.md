@@ -46,10 +46,29 @@ Let's delve into a practical example of a Docker fat-manifest for a hypothetical
 ```
 
 In this example, the fat-manifest lists three platform-specific images for "MyWebApp" - one for x86 (amd64), one for ARMv7, and another for ARM64. The `digest` field represents the unique identifier for each platform image.
+Let's dive into the practical process of pulling this multi-platform image and understand the role of the digest in ensuring that the correct platform image is retrieved.
 
-## Relationship Between Fat-Manifests and Docker Images
+### Flow When Pulling a Multi-Platform Docker Image
 
-A Docker fat-manifest serves as a reference for the corresponding platform-specific images. When you pull a multi-platform image, Docker automatically selects the appropriate platform image based on the host's architecture. This simplifies the process of managing multi-platform container applications and ensures that the right image runs on the right platform.
+1. **Request to Pull the Image**: You issue a `docker pull` command with the reference to the multi-platform image, such as `docker pull mywebapp:latest`. In this case, "latest" refers to the tag, but the image reference may include additional platform information.
+
+2. **Querying the Registry**: Docker first contacts the Docker registry where the image is hosted. It checks for the presence of a fat-manifest, which is responsible for mapping the requested image to its platform-specific variants.
+
+3. **Reading the Fat-Manifest**: The fat-manifest, as seen in the earlier example, contains information about different platform-specific images along with their digests. Docker uses this manifest to determine the architecture and OS of the host where the image is being pulled.
+
+4. **Selecting the Appropriate Platform Image**: Based on the host's architecture and OS, Docker selects the platform-specific image with the corresponding architecture and OS, and then it looks for the associated digest in the manifest.
+
+5. **Downloading the Platform Image**: Once Docker has identified the correct platform image, it downloads that image from the registry using the specific digest as a unique identifier. The digest ensures that you get the exact image that matches your host platform.
+
+### Significance of the Digest
+
+The digest, in the context of Docker images, is a unique cryptographic hash that represents the contents of a specific image layer or manifest. It serves several critical purposes:
+
+- **Uniqueness**: Each image's digest is unique to its content. Even a minor change in the image results in a completely different digest.
+
+- **Integrity**: The digest provides a way to verify the integrity of the image. If the digest matches, you can be certain that the image you pull is the exact image that was intended.
+
+- **Reproducibility**: When sharing images in a distributed environment, using digests ensures that you and others get the same image consistently, regardless of where or when you pull it.
 
 ## Conclusion
 
