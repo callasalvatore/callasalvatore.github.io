@@ -1,7 +1,5 @@
 # Demystifying Docker Fat-Manifests: Unraveling the Magic of Multi-Platform Images
 
-## Introduction
-
 Docker has revolutionized the way we package and distribute applications, but it's not always a straightforward process when you're dealing with images meant to run on various platforms. This is where Docker fat-manifests come into play, a powerful mechanism that allows you to create multi-platform Docker images. In this article, we'll explore what Docker fat-manifests are, provide a real-world example, and explain the relationship between fat-manifests and Docker images.
 
 ## Understanding Docker Fat-Manifests
