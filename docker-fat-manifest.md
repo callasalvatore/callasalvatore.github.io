@@ -1,6 +1,3 @@
-Certainly, here's the LinkedIn article about Docker fat-manifests in Markdown format:
-
-```markdown
 # Demystifying Docker Fat-Manifests: Unraveling the Magic of Multi-Platform Images
 
 ## Introduction
@@ -61,4 +58,3 @@ A Docker fat-manifest serves as a reference for the corresponding platform-speci
 Docker fat-manifests are a crucial tool for building and distributing multi-platform container applications. They make it possible to package and manage different platform-specific images for a single application efficiently. As Docker continues to evolve, fat-manifests play a vital role in ensuring that your applications run seamlessly on various platforms, from x86 to ARM, and more.
 
 In the ever-expanding world of containers, understanding and harnessing the power of Docker fat-manifests is a valuable skill for any developer or DevOps professional. Embrace the multi-platform era and make your applications universally accessible with Docker fat-manifests!
-```
