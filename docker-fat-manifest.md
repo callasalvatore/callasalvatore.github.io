@@ -45,7 +45,7 @@ Let's delve into a practical example of a Docker fat-manifest for a hypothetical
 }
 ```
 
-In this example, the fat-manifest lists three platform-specific images for "MyWebApp" - one for x86 (amd64), one for ARMv7, and another for ARM64. The `digest` field represents the unique identifier for each platform image.
+In this example, the fat-manifest lists three platform-specific images for "MyWebApp" - one for x86 (amd64), one for ARMv7, and another for ARM64; the `digest` field represents the unique identifier for each platform image.
 Let's dive into the practical process of pulling this multi-platform image and understand the role of the digest in ensuring that the correct platform image is retrieved.
 
 ### Flow When Pulling a Multi-Platform Docker Image
