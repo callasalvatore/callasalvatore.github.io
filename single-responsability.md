@@ -89,7 +89,7 @@ public class ShoppingCartTests
 ## Separating concerns with different classes and interfaces
 
 In recognition of the testing challenge and with a commitment to heighten code quality, we embark on the pivotal step of concern separation. 
-We introduce a novel class, OrderProcessor, designed exclusively to manage order processing. Simultaneously, we reshape the ShoppingCart 
+We introduce a novel class, `OrderProcessor`, designed exclusively to manage order processing. Simultaneously, we reshape the ShoppingCart 
 class to concentrate solely on shopping cart management.
 
 `IShoppingCart` and `IOrderProcessor` Interfaces:
