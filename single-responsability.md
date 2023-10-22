@@ -7,7 +7,7 @@ using Dependency Injection in C# to finely disentangle concerns within our code.
 
 ## The initial scenario - A testing challenge
 
-Our journey commences with an examination of the initial scenario. In this scenario, we are presented with a ShoppingCart class. 
+Our journey commences with an examination of the initial scenario. In this scenario, we are presented with a `ShoppingCart` class. 
 While fully functional, it grapples with a dual role—managing the shopping cart and processing orders. 
 This dual responsibility, as we shall see, poses a significant challenge when it comes to testing.
 
