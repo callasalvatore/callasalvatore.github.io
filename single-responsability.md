@@ -167,6 +167,37 @@ now implement these interfaces, `IShoppingCart` and `IOrderProcessor`, respectiv
 organization of the code but also profoundly improved its testability. Through Dependency Injection, the `ShoppingCart` class receives 
 an `IOrderProcessor` through its constructor, which positions our code for seamless adaptation to future requirements and changes.
 
+## What exactly is the Dependency Injection?
+
+### **Definition**
+> **Dependency Injection (DI)** is a design pattern in which a class, instead of creating its dependencies, receives them as external dependencies, typically passed through the class's constructor or
+> through method parameters. This pattern promotes loose coupling and enhances the modularity, testability, and maintainability of the code. By injecting dependencies, it allows for the dynamic swapping
+> of components, making it easier to adapt to changing requirements, facilitate unit testing, and reuse code components.
+
+ In simple terms, it's about providing a class with its dependencies (i.e., the objects it depends on) from the outside, rather than creating them within the class itself.
+ The key elements of the `DI` include:
+
+ 1. **Dependent Class:** The class that relies on one or more external dependencies. These dependencies are typically services or objects that the dependent class requires to perform its functions.
+    - The dependent class in this example is the `ShoppingCart` class. It relies on an external service or component to process orders.
+     
+ 2. **Dependency:** The external objects, services, or components that the dependent class relies on to fulfil its responsibilities.
+    - The dependency in this example is the `IOrderProcessor` interface. The `ShoppingCart` class depends on this interface to perform the order processing. The `OrderProcessor` class is a concrete
+      implementation of this interface, representing the specific order processing logic.
+      
+ 3. **Injection:** The process of providing the dependencies to the dependent class. This can be achieved through constructor injection, method parameter injection, or property injection.
+    - The dependency (IOrderProcessor) is provided to the dependent class (ShoppingCart). This is achieved through constructor injection:
+      ```csharp
+        public ShoppingCart(IOrderProcessor orderProcessor)
+        {
+            this.orderProcessor = orderProcessor;
+        }
+      ```
+          
+ 4. **Inversion of Control (IoC):** `DI` is often used in conjunction with `IoC` containers or frameworks, which manage the creation and lifecycle of objects. `IoC` containers facilitate the injection
+    of dependencies and the configuration of the application's component graph.
+
+In essence, Dependency Injection is a powerful pattern for promoting code modularity, testability, and maintainability. It's particularly beneficial in large and complex applications where managing dependencies and the interactions between components is crucial for robust and adaptable software.
+
 ## Tests - The improved way
 
 Now that we have a well-structured code, let's see how easy is to write tests and mocking
