@@ -35,7 +35,7 @@ public class ShoppingCart
 
 ```
 
-To underscore this challenge, let's delve into a practical test. Here is a simple test using the initial version of the ShoppingCart class. 
+To underscore this challenge, let's delve into a practical test. Here is a simple test using the initial version of the `ShoppingCart` class. 
 We aim to verify the functionality of the Checkout process, but we swiftly encounter a roadblock:
 
 ```csharp
@@ -163,9 +163,9 @@ public class OrderProcessor : IOrderProcessor
 ```
 
 With the integration of interfaces, we redefine the contracts for our classes. The `ShoppingCart` and `OrderProcessor` classes 
-now implement these interfaces, IShoppingCart and IOrderProcessor, respectively. We have not only enhanced the modularity and 
-organization of the code but also profoundly improved its testability. Through Dependency Injection, the ShoppingCart class receives 
-an IOrderProcessor through its constructor, which positions our code for seamless adaptation to future requirements and changes.
+now implement these interfaces, `IShoppingCart` and `IOrderProcessor`, respectively. We have not only enhanced the modularity and 
+organization of the code but also profoundly improved its testability. Through Dependency Injection, the `ShoppingCart` class receives 
+an `IOrderProcessor` through its constructor, which positions our code for seamless adaptation to future requirements and changes.
 
 ## Tests - The improved way
 
