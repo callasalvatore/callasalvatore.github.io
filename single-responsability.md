@@ -1,4 +1,4 @@
-# Elevating Code Quality: Separating Concerns with Dependency Injection and Interfaces in C#
+# Elevating Code Quality: Separating Concerns with Dependency Injection in C#
 
 In the realm of software development, the pursuit of clean, maintainable, and efficient code stands as a testament to the craftsmanship of a skilled 
 developer. One of the guiding principles in this pursuit is the Single Responsibility Principle (SRP), which posits that a class should have a 
