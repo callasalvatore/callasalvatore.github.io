@@ -1,4 +1,4 @@
-🚀 **The C4 Model: Simplifying Software Architecture Diagrams**
+# 🚀 **The C4 Model: Simplifying Software Architecture Diagrams**
 
 How many times have you looked at an architecture diagram and felt lost? 🤔 Complex boxes and arrows everywhere, but no clear explanation or legend to guide you. It happens all the time, right?
 
