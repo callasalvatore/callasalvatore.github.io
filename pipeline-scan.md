@@ -21,8 +21,8 @@ Following best practices, as recommended by [Docker Security](https://docs.docke
 In the case of NuGet packages, tools like **Whitesource Bolt** or **Snyk** allow for automatic scanning of the libraries used in your project. This is aligned with the security guidelines from [NIST](https://www.nist.gov/), 
 which recommend regular scans to ensure that you are not inadvertently introducing vulnerable dependencies. The tools can suggest patches or updates for packages with known vulnerabilities, ensuring your code stays secure.
 
-When it comes to Git repositories, one of the most common security risks is the accidental inclusion of sensitive data, such as API keys or passwords. Tools like **GitLeaks**, together with recommendations 
-from the [OWASP GitHub Security Guide](https://owasp.org/www-community/Source_Code_Repository_Analysis), can automatically detect these issues and flag sensitive information before it becomes a security threat.
+When it comes to Git repositories, one of the most common security risks is the accidental inclusion of sensitive data, such as API keys or passwords. Tools like **GitLeaks** can automatically detect 
+these issues and flag sensitive information before it becomes a security threat.
 
 ## Automating Security Controls in CI/CD Pipelines
 
