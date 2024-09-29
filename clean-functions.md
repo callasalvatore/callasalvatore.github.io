@@ -40,6 +40,7 @@ So, what can we do to write better functions? Here are a few essential tips:
   - **Limit Parameters**: Too many parameters complicate the function itself and make testing more difficult.
   - **Avoid Boolean Parameters**: If a function needs a boolean flag, it's a sign that it's doing more than one thing.
   - **Avoid Side Effects**: Functions should not execute any hidden logic not clearly expressed by its name.
+  - **Avoid double checks**: Forcing the function user to check the function definition to understand the meaning, is a waste of time and should be avoided!!.
 
 🛠️ By following these simple principles, you'll improve code readability, reduce complexity, and make your projects more maintainable. 
 
