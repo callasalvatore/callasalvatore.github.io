@@ -42,6 +42,7 @@ So, what can we do to write better functions? Here are a few essential tips:
   - **Avoid Side Effects**: Functions should not execute any hidden logic not clearly expressed by its name.
   - **Avoid double checks**: Forcing the function user to check the function definition to understand the meaning, is a waste of time and should be avoided!!.
   - **Command Query separation**: Do not write a function that checks some conditions and executes changes to the data.
+  - **Do not return error codes but exceptions**: This avoids forcing the caller to manage the error immediately and reduces nested structures.
 
 🛠️ By following these simple principles, you'll improve code readability, reduce complexity, and make your projects more maintainable. 
 
