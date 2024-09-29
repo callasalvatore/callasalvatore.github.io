@@ -35,7 +35,6 @@ public Reward GetLevelReward(Player player, Level level)
 3. Open/Closed Principle: This function has to change every time a new difficulty level is added, which makes it less extensible.
 
 So, what can we do to write better functions? Here are a few essential tips:
-
   - 📛 Use Descriptive Names: It may seem obvious, but this is often neglected. A good function name clearly conveys what it does.
   - ✂️ Limit Parameters: Too many parameters complicate the function itself and make testing more difficult.
   - 🚫 Avoid Boolean Parameters: If a function needs a boolean flag, it's a sign that it's doing more than one thing.
