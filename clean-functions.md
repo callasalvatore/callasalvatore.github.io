@@ -1,8 +1,10 @@
 # The Importance of Functions in Programming Languages: A Fundamental Yet Overlooked Aspect
 
-💡 **Have you ever considered that, regardless of the programming language you choose, functions are something no one can do without?** They are the foundation of every language, essential for keeping code clear and providing the simplest form of code reuse.
+💡 **Have you ever considered that, regardless of the programming language you choose, functions are something no one can do without?** 
 
-However, despite their importance, functions are often treated with little care — given confusing names, and sometimes becoming excessively large. And what about their structure? Often horrendous.
+They are the foundation of every language, essential for keeping code clear and providing the simplest form of code reuse.
+However, despite their importance, functions are often treated with little care — given confusing names, and sometimes becoming excessively large. 
+And what about their structure? Often horrendous.
 
 Yet, when written with attention, functions can reduce complexity and improve code readability. On the other hand, poorly written functions — even just a few lines — can make the code unreadable and hard to maintain.
 
