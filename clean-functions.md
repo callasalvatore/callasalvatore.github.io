@@ -36,9 +36,9 @@ public Reward GetLevelReward(Player player, Level level)
 
 So, what can we do to write better functions? Here are a few essential tips:
 
-  - 📛 Use Descriptive Names: It may seem obvious, but this is often neglected. A good function name clearly conveys what it does.
-  - ✂️ Limit Parameters: Too many parameters complicate the function itself and make testing more difficult.
-  - 🚫 Avoid Boolean Parameters: If a function needs a boolean flag, it's a sign that it's doing more than one thing.
+    - 📛 Use Descriptive Names: It may seem obvious, but this is often neglected. A good function name clearly conveys what it does.
+    - ✂️ Limit Parameters: Too many parameters complicate the function itself and make testing more difficult.
+    - 🚫 Avoid Boolean Parameters: If a function needs a boolean flag, it's a sign that it's doing more than one thing.
 
 🛠️ By following these simple principles, you'll improve code readability, reduce complexity, and make your projects more maintainable. 
 
